@@ -18,3 +18,16 @@ add_executable(write_batch write_batch.cpp)
 
 # 链接 LevelDB 库
 target_link_libraries(write_batch PRIVATE leveldb)
+
+# 添加可执行文件
+add_executable(db_iterator db_iterator.cpp)
+
+# 链接 LevelDB 库
+target_link_libraries(db_iterator PRIVATE leveldb)
+
+# 添加可执行文件
+add_executable(cache_and_filter cache_and_filter.cpp)
+
+# 链接 LevelDB 库
+target_link_libraries(cache_and_filter PRIVATE leveldb)
+
